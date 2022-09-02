@@ -1,7 +1,19 @@
 import { Tags } from "./Tags";
 
 export const ArticleCard = ({ data }) => {
-  const dataTaxonomy = data.taxonomy.tags;
+  // const dataTags = data.taxonomy.tags;
+  // let result = []
+  // let obj = {}
+  
+  // for (let i = 0; i < 30; i++) {
+  //   for (let j = 0; j < dataTags.length; j++) {
+  //     obj.slug = dataTags[j].slug
+  //     obj.text = dataTags[j].text
+  //     result.push(obj)
+  //   }
+    
+  // }
+  // console.log(result)
 
   // const [dataTaxonomy, setDataTaxonomy] = useState(data.taxonomy.tags);
 
@@ -10,20 +22,21 @@ export const ArticleCard = ({ data }) => {
   // }
   return (
     <>
-    {/* elimino los que no tienen tags */}
-      {dataTaxonomy.length > 0 && (
+    
+      {/* {dataTags.length > 0 && (
         <div className="col-12 col-md-6 col-lg-4 col-xl-3">
           <div className="card">
-            {/* <img src="..." className="card-img-top" alt="img" /> */}
+           
             <div className="card-body">
               <h5 className="card-title">Tags</h5>
               <p className="card-text">
-                <Tags tagsList={data.taxonomy} />
+                <Tags dataTags={dataTags} />
               </p>
             </div>
           </div>
         </div>
-      )}
+      )} */}
+      aa
     </>
   );
 };
