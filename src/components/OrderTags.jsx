@@ -12,10 +12,8 @@ export const OrderTags = () => {
         <div className="card-body">
           <h5 className="card-title">Tags</h5>
           <ul className="list-group">
-            {orderTags.map((item) => (
-             
-                <Tags item={item} key={uuid()} />
-              
+            {orderTags.map((item, index) => (
+              <Tags item={item} key={uuid()} index={index} />
             ))}
           </ul>
         </div>

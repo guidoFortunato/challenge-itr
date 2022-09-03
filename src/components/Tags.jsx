@@ -1,9 +1,13 @@
-export const Tags = ({ item }) => {
-  
+import { Link } from "react-router-dom";
+
+export const Tags = ({ item, index }) => {
   return (
     <li className="list-group-item">
       <span className="fw-bold me-3">
-        Nombre: <span className="fw-bold color-red">{item.slug}</span>
+        {index + 1}) Slug:{" "}
+        <span className="fw-bold color-red">
+          <Link to={`/tema/${item.slug}`}>{item.slug}</Link>
+        </span>
       </span>
       <span className="fw-bold me-3">
         Texto: <span className="fw-bold color-red">{item.text}</span>

@@ -1,12 +1,12 @@
 import { ArticleCard } from "./ArticleCard";
 
-
 export const ArticleList = ({ data }) => {
+  const dataSubtype7 = data.filter((item) => item.subtype === "7");
+
   return (
     <>
-      
-      {data.map((item) => (
-        <ArticleCard data={item} key={item._id} />
+      {dataSubtype7.map((item) => (
+        <ArticleCard itemData={item} key={item._id} />
       ))}
     </>
   );
