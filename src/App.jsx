@@ -1,22 +1,21 @@
 import { useContext, useEffect } from "react";
 import { ArticleList } from "./components/ArticleList";
+import { OrderTags } from "./components/OrderTags";
 import { DataContext } from "./context/DataProvder";
 import { createArrayTags } from "./helpers/createArraydata";
 import { useFetch } from "./hooks/useFetch";
 
 const App = () => {
-  const { data, isLoading } = useFetch(
-    "https://api-test-ln.herokuapp.com/articles"
-  );
+  const url = "https://api-test-ln.herokuapp.com/articles";
+  const { data, isLoading } = useFetch(url);
 
-  const { fillTags } = useContext(DataContext);
+  const { fillTags, fillData } = useContext(DataContext);
 
-  
   useEffect(() => {
     if (!isLoading) {
-
-      const tags = createArrayTags(data)
+      const tags = createArrayTags(data);
       fillTags(tags);
+      fillData(data);
     }
   }, [isLoading, data]);
 
@@ -25,7 +24,12 @@ const App = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container mt-2">
+      <h2>Tags ordenados</h2>
+      <div className="row">
+        <OrderTags />
+      </div>
+      <h2 className="mt-3">Grilla</h2>
       <div className="row">
         <ArticleList data={data} />
       </div>
