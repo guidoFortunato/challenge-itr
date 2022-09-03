@@ -1,29 +1,12 @@
 import { Tags } from "./Tags";
 
 export const ArticleCard = ({ data }) => {
-  // const dataTags = data.taxonomy.tags;
-  // let result = []
-  // let obj = {}
+  const dataTags = data.taxonomy.tags;
   
-  // for (let i = 0; i < 30; i++) {
-  //   for (let j = 0; j < dataTags.length; j++) {
-  //     obj.slug = dataTags[j].slug
-  //     obj.text = dataTags[j].text
-  //     result.push(obj)
-  //   }
-    
-  // }
-  // console.log(result)
-
-  // const [dataTaxonomy, setDataTaxonomy] = useState(data.taxonomy.tags);
-
-  // if (dataTaxonomy.length === 0) {
-  //   console.log("cero");
-  // }
   return (
     <>
     
-      {/* {dataTags.length > 0 && (
+      {dataTags.length > 0 && (
         <div className="col-12 col-md-6 col-lg-4 col-xl-3">
           <div className="card">
            
@@ -35,8 +18,8 @@ export const ArticleCard = ({ data }) => {
             </div>
           </div>
         </div>
-      )} */}
-      aa
+      )}
+      
     </>
   );
 };
