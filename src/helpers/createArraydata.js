@@ -8,7 +8,7 @@ export const createArrayTags = (data) => {
       obj.slug = data[i].taxonomy.tags[j].slug;
       obj.text = data[i].taxonomy.tags[j].text;
       obj.count = 1;
-      obj.id = data[j]._id;
+      // obj.id = data[j]._id;
       let isEqual = arrayTags.filter((item) => item.slug === obj.slug);
 
       if (isEqual[0]) {
