@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
+import { DetailSlug } from "../components/DetailSlug";
 
 import App from "../App";
-import { DetailSlug } from "../components/DetailSlug";
 
 export const AppRouter = () => {
   return (
