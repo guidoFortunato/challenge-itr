@@ -3,7 +3,7 @@ import { createContext, useState } from 'react';
 export const DataContext = createContext()
 
 
-export const DataProvder = ({children}) => {
+export const DataProvider = ({children}) => {
 
   const [ orderTags, setOrderTags ] = useState([]);
   const [ completeData, setCompleteData ] = useState([]);

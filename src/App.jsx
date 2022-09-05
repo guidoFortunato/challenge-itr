@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { ArticleList } from "./components/ArticleList";
 import { OrderTags } from "./components/OrderTags";
 import { Spinner } from "./components/Spinner";
-import { DataContext } from "./context/DataProvder";
+import { DataContext } from "./context/DataProvider";
 import { createArrayTags } from "./helpers/createArraydata";
 import { useFetch } from "./hooks/useFetch";
 

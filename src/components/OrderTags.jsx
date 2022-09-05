@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { DataContext } from "../context/DataProvder";
+import { DataContext } from "../context/DataProvider";
 import { Tags } from "./Tags";
 import uuid from "react-uuid";
 
