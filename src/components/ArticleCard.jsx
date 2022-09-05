@@ -26,12 +26,11 @@ export const ArticleCard = ({ itemData }) => {
 
   return (
     <>
-      <div className="col-12 col-md-6 col-lg-4 col-xl-3 mt-2">
+      <div className="col-12 col-md-6 col-lg-4 col-xl-3 mt-2 size-container">
         <div className="card">
           <img
             src={itemData.promo_items.basic.url}
             alt="img recetas"
-            className="img-thumbnail size-img"
           />
           <div className="card-body">
             <h5 className="card-title">{itemData.headlines.basic}</h5>

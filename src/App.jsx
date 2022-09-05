@@ -28,7 +28,7 @@ const App = () => {
   }
 
   return (
-    <div className="container mt-2">
+    <div className="container py-3">
       <h2>Tags ordenados</h2>
       <div className="row">
         <OrderTags />
