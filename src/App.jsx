@@ -6,9 +6,12 @@ import { DataContext } from "./context/DataProvider";
 import { createArrayTags } from "./helpers/createArraydata";
 import { useFetch } from "./hooks/useFetch";
 
+
 const App = () => {
   const url = "https://api-test-ln.herokuapp.com/articles";
   const { data, isLoading } = useFetch(url);
+  
+
 
   const { fillTags, fillData } = useContext(DataContext);
 

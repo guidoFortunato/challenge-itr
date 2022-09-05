@@ -5,7 +5,7 @@ export const Tags = ({ item, index }) => {
     <li className="list-group-item">
       <span className="fw-bold me-3">
         {index + 1}) Slug:
-        <span className="fw-bold color-red">
+        <span className="ps-1 fw-bold color-red">
           <Link to={`/tema/${item.slug}`}>{item.slug}</Link>
         </span>
       </span>
@@ -14,7 +14,7 @@ export const Tags = ({ item, index }) => {
       </span>
       <span className="fw-bold">
         Cantidad de veces que aparece:
-        <span className="fw-bold color-red">{item.count}</span>
+        <span className="ps-1 fw-bold color-red">{item.count}</span>
       </span>
     </li>
   );
