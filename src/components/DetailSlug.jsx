@@ -16,7 +16,7 @@ export const DetailSlug = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container pt-5">
       <div className="row">
         <div className="col-12 text-center">
           <h2>Slug: <span className="color-red">{ slugCapitalize }</span></h2>
